@@ -12,10 +12,11 @@ const LatesMobiles = () => {
     <div className='latest'>
       {latestMobile.map((item)=>(
         <ProductItem 
-            img = {item.imgSrc}
-            company = {item.companyName}
-            series = {item.seriesName}
-            price={item.price}
+          img={item.imgSrc}
+          company={item.companyName}
+          series={item.modelName}
+          price={item.price}
+          os={item.os}
         />
       ))}
     </div>

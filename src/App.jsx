@@ -12,6 +12,7 @@ import Orders from './pages/Orders';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import { ToastContainer, toast } from 'react-toastify';
+import Footer from './components/Footer';
 const App = () => {
   return (
     <div>
@@ -30,9 +31,9 @@ const App = () => {
         <Route path='/placeorder' element = {<PlaceOrder />}/>
         <Route path='/orders' element = {<Orders />}/>
       </Routes>
-
+      <Navbar />
       <footer>
-        <Navbar />
+        <Footer />
       </footer>
     </div>
   )

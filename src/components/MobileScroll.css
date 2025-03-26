@@ -1,0 +1,48 @@
+/* Container for scrolling */
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f0f0f0;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+  
+  /* Track for animation */
+  .scroll-track {
+    display: inline-flex;
+    animation: scroll 25s linear infinite;
+  }
+  
+  /* Individual card style */
+  .card-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 120px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .card-x:hover {
+    transform: scale(1.1);
+    background: #2e7d32;
+  }
+  
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

@@ -62,9 +62,9 @@ const Carousel = () => {
     slidesToShow: 4,               // Number of cards visible at a time
     slidesToScroll: 1,
     autoplay: true,                // Auto sliding
-    autoplaySpeed: 2000,           // Slide every 2 seconds
+    autoplaySpeed: 0,           // Slide every 2 seconds
     cssEase: "linear",             // Continuous sliding effect
-    pauseOnHover: false,           // Keep sliding even on hover
+    pauseOnHover: true,           // Keep sliding even on hover
     responsive: [
       {
         breakpoint: 1024,          // Tablets
