@@ -4,7 +4,7 @@ import "./MobileScroll.css";
 const MobileScroll = () => {
   const companies = [
     "Apple", "Samsung", "Xiaomi", "OnePlus", "Google", "Realme",
-    "Vivo", "Oppo", "Nokia", "Motorola", "Asus", "Sony", "LG"
+    "Vivo", "Oppo", "Nokia", "Motorola", "Asus", "Sony"
   ];
 
   // Duplicate the companies to create the infinite loop effect
