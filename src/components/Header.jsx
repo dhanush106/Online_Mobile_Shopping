@@ -16,7 +16,7 @@ const Header = () => {
                 <p>Favourites</p>
             </div>
             <div className="cart icon">
-                <Link to="/cart">
+                <Link to="/cart" className='cart-link'>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <p>Cart {getCartCount()} </p>
                 </Link>   

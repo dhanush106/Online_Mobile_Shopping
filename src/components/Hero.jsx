@@ -1,10 +1,10 @@
 import React from 'react'
+import Carousel from './Carousel';
 
 const Hero = () => {
   return (
-    <div className='hero'>
-      <h1>Unlock the power</h1>
-      <h2>Of mobiles in th world</h2>
+    <div>
+      <Carousel />
     </div>
   )
 }

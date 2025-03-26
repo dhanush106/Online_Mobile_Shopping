@@ -24,6 +24,7 @@ const Collections = () => {
               company={item.companyName}
               series={item.modelName}
               price={item.price}
+              os={item.os}
           />:null
         ))}
       </div>
