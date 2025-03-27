@@ -6,13 +6,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Section 1 - Company Info */}
         <div className="footer-section">
           <h3>MobileHub</h3>
           <p>Your one-stop shop for the latest smartphones and accessories.</p>
         </div>
-
-        {/* Section 2 - Quick Links */}
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
@@ -22,8 +19,6 @@ const Footer = () => {
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-
-        {/* Section 3 - Support */}
         <div className="footer-section">
           <h4>Support</h4>
           <ul>
@@ -33,8 +28,6 @@ const Footer = () => {
             <li><a href="#terms">Terms & Conditions</a></li>
           </ul>
         </div>
-
-        {/* Section 4 - Social Media */}
         <div className="footer-section social">
           <h4>Follow Us</h4>
           <div className="social-icons">
@@ -45,8 +38,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Bottom Footer */}
       <div className="footer-bottom">
         <p>&copy; 2025 MobileHub. All Rights Reserved.</p>
       </div>

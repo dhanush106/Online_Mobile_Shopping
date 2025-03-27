@@ -6,8 +6,6 @@ const MobileScroll = () => {
     "Apple", "Samsung", "Xiaomi", "OnePlus", "Google", "Realme",
     "Vivo", "Oppo", "Nokia", "Motorola", "Asus", "Sony"
   ];
-
-  // Duplicate the companies to create the infinite loop effect
   const infiniteCompanies = [...companies, ...companies];
 
   return (

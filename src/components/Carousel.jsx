@@ -6,49 +6,49 @@ import "../styles.css";
 
 const mobilePhones = [
   {
-    img: "https://picsum.photos/200?random=1",
+    img: "https://m.media-amazon.com/images/I/61-r9zOKBCL._AC_UL320_.jpg",
     name: "iPhone 13",
     specs: "128GB, 4GB RAM",
     price: "$799",
   },
   {
-    img: "https://picsum.photos/200?random=2",
+    img: "https://m.media-amazon.com/images/I/81JHcYDLcHL._AC_UY218_.jpg",
     name: "Samsung S21",
     specs: "256GB, 8GB RAM",
     price: "$899",
   },
   {
-    img: "https://picsum.photos/200?random=3",
+    img: "https://m.media-amazon.com/images/I/61VfAnDQqYL._AC_UY218_.jpg",
     name: "Google Pixel 6",
     specs: "128GB, 8GB RAM",
     price: "$699",
   },
   {
-    img: "https://picsum.photos/200?random=4",
+    img: "https://m.media-amazon.com/images/I/71N4hshhfNL._AC_UY218_.jpg",
     name: "OnePlus 9 Pro",
     specs: "256GB, 12GB RAM",
     price: "$749",
   },
   {
-    img: "https://picsum.photos/200?random=5",
+    img: "https://m.media-amazon.com/images/I/61RWmrzQG9S._AC_UY218_.jpg",
     name: "Xiaomi Mi 11",
     specs: "128GB, 8GB RAM",
     price: "$499",
   },
   {
-    img: "https://picsum.photos/200?random=6",
+    img: "https://m.media-amazon.com/images/I/61HyiMlCuTL._AC_UY218_.jpg",
     name: "Realme GT",
     specs: "256GB, 12GB RAM",
     price: "$599",
   },
   {
-    img: "https://picsum.photos/200?random=7",
+    img: "https://m.media-amazon.com/images/I/71lw7TJwT+L._AC_UL320_.jpg",
     name: "Vivo X70",
     specs: "256GB, 8GB RAM",
     price: "$699",
   },
   {
-    img: "https://picsum.photos/200?random=8",
+    img: "https://m.media-amazon.com/images/I/61Gq6YKRQlL._AC_UY218_.jpg",
     name: "Oppo Reno 6",
     specs: "128GB, 6GB RAM",
     price: "$399",
@@ -57,23 +57,23 @@ const mobilePhones = [
 
 const Carousel = () => {
   const settings = {
-    infinite: true,                // Infinite Loop
-    speed: 3000,                   // Smooth transition
-    slidesToShow: 4,               // Number of cards visible at a time
+    infinite: true,               
+    speed: 3000,                   
+    slidesToShow: 4,               
     slidesToScroll: 1,
-    autoplay: true,                // Auto sliding
-    autoplaySpeed: 0,           // Slide every 2 seconds
-    cssEase: "linear",             // Continuous sliding effect
-    pauseOnHover: true,           // Keep sliding even on hover
+    autoplay: true,          
+    autoplaySpeed: 0,         
+    cssEase: "linear",            
+    pauseOnHover: true,           
     responsive: [
       {
-        breakpoint: 1024,          // Tablets
+        breakpoint: 1024,         
         settings: {
           slidesToShow: 3,
         }
       },
       {
-        breakpoint: 768,           // Mobile
+        breakpoint: 768,       
         settings: {
           slidesToShow: 1,
         }

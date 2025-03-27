@@ -6,7 +6,6 @@ const Cart = () => {
   const [cartData, setCartData] = useState([]);
   const [totalCost, setTotalCost] = useState(0);
 
-  // Update cart data when cartItems change
   useEffect(() => {
     const tempData = [];
     for (const items in cartItems) {
@@ -22,8 +21,6 @@ const Cart = () => {
     }
     setCartData(tempData);
   }, [cartItems]);
-
-  // Calculate total cost properly
   useEffect(() => {
     let total = 0;
     for (const item of cartData) {
@@ -46,8 +43,7 @@ const Cart = () => {
             (product) => product.modelName === item.modelName
           );
 
-          if (!productData) return null; // Skip if product not found
-
+          if (!productData) return null;
           return (
             <div key={index} className='cart-items'>
               <div className='c'>
@@ -72,8 +68,6 @@ const Cart = () => {
           );
         })}
       </div>
-
-      {/* Displaying Total Cost */}
       <div className='cart-total'>
         <p>Total Cost: ${totalCost}</p>
         <button>Checkout</button>
