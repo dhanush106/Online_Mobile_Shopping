@@ -1,4 +1,4 @@
-/* Base Styling */
+/* Base Styling
 body {
     font-family: Arial, sans-serif;
     background: #f0f0f0;
@@ -22,8 +22,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Mobile Card Styling */
+ 
   .mobile-card {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
@@ -63,8 +62,6 @@ body {
     color: #ff416c;
     font-weight: bold;
   }
-  
-  /* Carousel Dots Styling */
   .slick-dots li button:before {
     color: #2575fc;
     font-size: 14px;
@@ -75,4 +72,50 @@ body {
     color: #ff416c;
     font-size: 16px;
   }
-  
+   */
+
+   .slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-out;
+    margin-bottom: 15px;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

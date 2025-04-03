@@ -520,7 +520,7 @@ const mobileDetails = [
         "companyName": "Vivo",
         "modelName": "Vivo Model 43",
         "price": 275,
-        "imgSrc": "https://picsum.photos/200",
+        "imgSrc": "https://m.media-amazon.com/images/I/71hd6n3-jTL._AC_UY218_.jpg",
         "ram": "12GB",
         "storage": "64GB",
         "screenSize": "5.5 inches",

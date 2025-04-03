@@ -1,41 +1,86 @@
-.scroll-container {
-    width: 100%;
-    overflow: hidden;
-    background: #f0f0f0;
-    white-space: nowrap;
-    padding: 20px 0;
+h1 {
+  margin-bottom: 50px;
+  color: rgb(37, 117, 252);
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Wrapper for smooth infinite scrolling */
+.slides-wrapper {
+  display: flex;
+  white-space: nowrap;
+  animation: infiniteScroll 20s linear infinite;
+}
+
+/* Duplicate slides to create an infinite effect */
+.slides-wrapper:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* Individual slides */
+.slides-1 {
+  width: 200px;
+  margin: 0 15px;
+  border-radius: 50px;
+  transition: transform 0.5s ease-in-out;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.slides-1:hover {
+  transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-1 {
+  left: 10px;
+}
+
+.next-1 {
+  right: 10px;
+}
+
+/* Infinite scrolling animation */
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
   }
-  .scroll-track {
-    display: inline-flex;
-    animation: scroll 25s linear infinite;
+  100% {
+    transform: translateX(-50%);
   }
-  .card-x {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    height: 120px;
-    background: #4caf50;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .slides-wrapper {
+    animation: infiniteScroll 15s linear infinite;
+  }
+
+  .slides-1 {
+    width: 150px; /* Reduce image size for mobile */
     margin: 0 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    cursor: pointer;
   }
-  
-  .card-x:hover {
-    transform: scale(1.1);
-    background: #2e7d32;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
+}
